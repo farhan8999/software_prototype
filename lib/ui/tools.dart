@@ -53,6 +53,7 @@ class Tools extends StatelessWidget {
     );
   }
 
+  //method to display information about to do list
     Padding _get_todo_info(context) {
       return Padding(
         padding: const EdgeInsets.only(left: 8.0, right: 6.0),
@@ -93,6 +94,7 @@ class Tools extends StatelessWidget {
       );
   }
 
+  //method to display information about ai chatbot
   Padding _get_ai_info(context) {
     return Padding(
       padding: const EdgeInsets.only(left: 8.0, right: 6.0),

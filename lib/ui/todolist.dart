@@ -22,7 +22,7 @@ class _todolistState extends State<todolist> {
     todos = ["Hello", "Hey there"];
   }
 
-
+// method to add data to database
   createTodo() {
     DocumentReference documentReference = FirebaseFirestore.instance.collection("MyTodos").doc(title);
 
@@ -34,6 +34,7 @@ class _todolistState extends State<todolist> {
     documentReference.set(todoList).whenComplete(() => print("Data stored successfully"));
   }
 
+//method to delete item off the database
   deleteTodo(item) {
     DocumentReference documentReference = FirebaseFirestore.instance.collection("MyTodos").doc(item);
 

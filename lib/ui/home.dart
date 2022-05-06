@@ -19,10 +19,12 @@ class divide_conquer extends StatelessWidget {
             color: Colors.green.shade800,
             borderRadius: BorderRadius.circular(14.5)
           ),  
+          //intrinsic width mean to line up in equal width
         child: IntrinsicWidth(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.center,
+            // Main menu buttons
             children: [
               Text("Divide and \nConquer", style: TextStyle(fontSize: 40, color: Colors.white, fontFamily: ''), textAlign: TextAlign.center,),
               ElevatedButton(onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => Tools()));}, 

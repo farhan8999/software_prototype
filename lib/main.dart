@@ -5,7 +5,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'ui/home.dart';
 
+//main method to run application
 Future<void> main() async {
+  //connection to firebase database
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MaterialApp(
